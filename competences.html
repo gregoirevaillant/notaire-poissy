@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos compétences — Office Notarial Me Thierry VAILLANT, Poissy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Process steps */
+    .process-grid {
+      display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+      background:var(--green-border); margin-top:3rem;
+    }
+    .process-step { background:var(--green-mid); padding:2.5rem 2rem; }
+    .step-num { font-family:'Playfair Display',serif; font-size:3.5rem; font-weight:400; color:rgba(201,168,76,.2); line-height:1; margin-bottom:1.25rem; }
+    .step-title { font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--text-light); margin-bottom:.75rem; }
+    .step-desc { font-size:.8rem; color:var(--text-muted); line-height:1.8; }
+
+    @media(max-width:860px){
+      .process-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:500px){
+      .process-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Me Thierry Vaillant · Notaire</a>
+  <ul class="nav-links">
+    <li><a href="index.html">L'étude</a></li>
+    <li><a href="equipe.html">L'équipe</a></li>
+    <li><a href="competences.html" class="active">Nos compétences</a></li>
+    <li><a href="tarifs.html">Nos tarifs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
+  <button class="hamburger" id="ham"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mob">
+  <a href="index.html">L'étude</a>
+  <a href="equipe.html">L'équipe</a>
+  <a href="competences.html">Nos compétences</a>
+  <a href="tarifs.html">Nos tarifs</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="mob-cta">Prendre rendez-vous</a>
+</div>
+
+<div class="page-hero">
+  <p class="label">Expertise</p>
+  <h1>Nos <span class="gold-italic">compétences</span></h1>
+  <p class="sub">Bienvenue à l'Étude Notariale de Me Thierry Vaillant, votre partenaire de confiance pour toutes vos démarches notariales. Notre équipe dévouée vous accompagne à chaque étape de votre vie, offrant des services sur mesure.</p>
+</div>
+
+<section class="sec-mid">
+
+  <div class="comp-block">
+    <p class="label">Droit public</p>
+    <h3>Conseil des personnes publiques</h3>
+    <p>
+      Nous conseillons les collectivités locales et établissements publics dans leurs projets juridiques, qu'il s'agisse de gestion de biens, de contrats administratifs, ou de procédures d'urbanisme. Grâce à notre expertise en droit public, nous assurons la conformité des actes aux règles spécifiques et optimisons les solutions juridiques tout en respectant les exigences du secteur public.
+    </p>
+    <ul class="comp-list">
+      <li>Gestion et cession de biens publics</li>
+      <li>Contrats administratifs</li>
+      <li>Procédures d'urbanisme</li>
+      <li>Droit de préemption</li>
+    </ul>
+  </div>
+
+  <div class="comp-block">
+    <p class="label">Famille & patrimoine</p>
+    <h3>Droit de la famille</h3>
+    <p>
+      Le pôle Droit de la famille regroupe la quasi-totalité des dossiers de divorces, d'organisation patrimoniale, d'adoptions, de donations, de testaments, de successions et de partages. Le droit successoral est un droit très complexe qui ne cesse d'évoluer. L'interprétation des textes ainsi que les techniques liquidatives doivent être maîtrisées dans le but d'appliquer les derniers souhaits des défunts tout en respectant les dispositions de la loi.
+    </p>
+    <ul class="comp-list">
+      <li>Successions & partages</li>
+      <li>Donations & donations-partage</li>
+      <li>Divorces</li>
+      <li>Testaments</li>
+      <li>Adoptions</li>
+      <li>Contrats de mariage & PACS</li>
+    </ul>
+  </div>
+
+  <div class="comp-block">
+    <p class="label">Immobilier professionnel</p>
+    <h3>Promotion immobilière</h3>
+    <p>
+      Maître Thierry Vaillant accompagne et conseille depuis plus de 20 ans les promoteurs immobiliers et institutionnels (publics ou privés) dans la conduite de leur projet. Qu'il s'agisse de terrain à bâtir, de volume ou encore d'immeuble en copropriété, nous créons à chaque étape un environnement juridique favorable en assurant la conformité de l'opération aux contraintes provenant du droit de l'urbanisme, de l'environnement mais aussi du droit de la copropriété et du droit public.
+    </p>
+    <p>
+      Nous veillons également au respect de la législation sur la vente d'immeuble à la découpe et la protection du locataire d'habitation. Notre connaissance de la fiscalité immobilière permet d'assurer une optimisation financière de votre projet.
+    </p>
+    <ul class="comp-list">
+      <li>Acquisition de terrain</li>
+      <li>Montage de l'organisation juridique</li>
+      <li>Volumétrie – État Descriptif de Division</li>
+      <li>Règlement de Copropriété</li>
+      <li>Vente en état futur d'achèvement (VEFA)</li>
+      <li>Optimisation fiscale immobilière</li>
+    </ul>
+  </div>
+
+  <div class="comp-block">
+    <p class="label">Immobilier privé</p>
+    <h3>Vente immobilière</h3>
+    <p>
+      Nous vous accompagnons dans vos projets de vente et d'acquisition de biens immobiliers, en vous apportant les conseils adaptés à votre situation. Nous élaborons la rédaction des actes de ventes, d'échange ou encore de partage, portant sur tous les types de biens (terrain, maison individuelle, copropriété), et analyserons avec vous la fiscalité applicable à votre opération immobilière.
+    </p>
+    <ul class="comp-list">
+      <li>Promesse de vente</li>
+      <li>Acte authentique de vente</li>
+      <li>Financement & prêt immobilier</li>
+      <li>Vente par adjudication</li>
+    </ul>
+  </div>
+
+  <div class="comp-block">
+    <p class="label">Conseil patrimonial</p>
+    <h3>Gestion de patrimoine</h3>
+    <p>
+      L'étude patrimoniale permet après analyse de dégager des solutions sur mesure qui répondent à vos objectifs : compléments de revenus en perspective de la retraite, transmission du patrimoine, etc. Un bilan complet est établi avant toute recommandation.
+    </p>
+    <ul class="comp-list">
+      <li>Audit patrimonial complet</li>
+      <li>Investissement immobilier</li>
+      <li>Placements financiers</li>
+      <li>Stratégie de transmission</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- PROCESSUS ACHAT -->
+<section class="sec-green">
+  <p class="label">Notre démarche</p>
+  <h2>Que faisons-nous quand<br>vous <span class="gold-italic">achetez ?</span></h2>
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Réception du dossier</div>
+      <div class="step-desc">Nous recueillons l'ensemble des documents nécessaires : titres de propriété, diagnostics, financement.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Analyse juridique</div>
+      <div class="step-desc">Vérification de la situation urbanistique, hypothécaire et administrative du bien pour sécuriser votre acquisition.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Rédaction de l'acte</div>
+      <div class="step-desc">Rédaction et envoi du projet d'acte aux parties avec explications détaillées des clauses essentielles.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Signature & clés</div>
+      <div class="step-desc">Lecture et signature de l'acte authentique, remise des clés et publication à la Conservation des Hypothèques.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2024 · Office Notarial Me Thierry Vaillant · Poissy · <a href="#">Mentions légales</a>
+</footer>
+
+<script>
+  document.getElementById('ham').addEventListener('click',()=>document.getElementById('mob').classList.toggle('open'));
+</script>
+</body>
+</html>

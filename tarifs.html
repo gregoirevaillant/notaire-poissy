@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos tarifs — Office Notarial Me Thierry VAILLANT, Poissy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .tarif-notice {
+      background:rgba(201,168,76,.1);
+      border:1px solid rgba(201,168,76,.25);
+      padding:1.5rem 2rem;
+      font-size:.84rem;
+      color:var(--text-muted);
+      line-height:1.8;
+      margin-bottom:3rem;
+    }
+    .tarif-notice strong { color:var(--gold); }
+
+    .table-wrap {
+      border:1px solid var(--green-border);
+      overflow:hidden;
+    }
+    .table-head-bar {
+      background:var(--green-card);
+      padding:1.25rem 1.5rem;
+      display:flex; justify-content:space-between; align-items:center;
+      border-bottom:1px solid var(--green-border);
+    }
+    .table-head-bar h3 { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--text-light); }
+    .table-head-bar span { font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--text-muted); }
+
+    .tarif-footnote {
+      padding:1rem 1.5rem;
+      font-size:.72rem;
+      font-style:italic;
+      color:var(--text-muted);
+      border-top:1px solid var(--green-border);
+      background:var(--green-card);
+    }
+
+    .info-boxes { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--green-border); margin-bottom:3rem; }
+    .info-box { background:var(--green-card); padding:2rem; }
+    .info-box .ib-icon { font-size:1.4rem; margin-bottom:1rem; }
+    .info-box h4 { font-family:'Playfair Display',serif; font-size:1rem; color:var(--text-light); margin-bottom:.6rem; }
+    .info-box p { font-size:.8rem; color:var(--text-muted); line-height:1.75; }
+
+    .pdf-band {
+      background:var(--green-mid);
+      padding:5rem 5vw;
+      text-align:center;
+      border-top:1px solid var(--green-border);
+    }
+    .pdf-band p.label { justify-content:center; display:flex; }
+    .pdf-band h2 { margin:.75rem auto 1.25rem; max-width:480px; }
+    .pdf-band p.desc { font-size:.87rem; color:var(--text-muted); max-width:420px; margin:0 auto 2.5rem; line-height:1.8; }
+
+    @media(max-width:860px){ .info-boxes { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Me Thierry Vaillant · Notaire</a>
+  <ul class="nav-links">
+    <li><a href="index.html">L'étude</a></li>
+    <li><a href="equipe.html">L'équipe</a></li>
+    <li><a href="competences.html">Nos compétences</a></li>
+    <li><a href="tarifs.html" class="active">Nos tarifs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
+  <button class="hamburger" id="ham"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mob">
+  <a href="index.html">L'étude</a>
+  <a href="equipe.html">L'équipe</a>
+  <a href="competences.html">Nos compétences</a>
+  <a href="tarifs.html">Nos tarifs</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="mob-cta">Prendre rendez-vous</a>
+</div>
+
+<div class="page-hero">
+  <p class="label">Transparence</p>
+  <h1>Nos <span class="gold-italic">tarifs</span></h1>
+  <p class="sub">Une politique tarifaire transparente, en conformité avec la réglementation en vigueur.</p>
+</div>
+
+<section class="sec-mid">
+
+  <div class="tarif-notice">
+    <strong>Honoraires indicatifs</strong> que l'Office pourrait appliquer sur toutes les prestations détachables et actes non soumis au tarif, conformément aux principes de fixation énoncés à l'alinéa 3 de l'article L.444-1 du Code de Commerce.<br>
+    <span style="margin-top:.5rem;display:block;">À ces honoraires s'ajoutent les taxes et droits d'enregistrement éventuellement applicables.</span>
+  </div>
+
+  <div class="info-boxes">
+    <div class="info-box">
+      <div class="ib-icon">⚖️</div>
+      <h4>Tarif réglementé</h4>
+      <p>Les actes courants (ventes immobilières, successions) sont soumis à un tarif réglementé par le décret du 26 février 2016.</p>
+    </div>
+    <div class="info-box">
+      <div class="ib-icon">💶</div>
+      <h4>Honoraires libres</h4>
+      <p>Pour les prestations de conseil et actes non soumis au tarif, des honoraires libres peuvent être convenus avec l'étude.</p>
+    </div>
+    <div class="info-box">
+      <div class="ib-icon">🧾</div>
+      <h4>Taxes & droits</h4>
+      <p>À ces honoraires s'ajoutent les taxes et droits d'enregistrement éventuellement applicables selon la nature de l'acte.</p>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <div class="table-head-bar">
+      <h3>Honoraires indicatifs — Prestations détachables</h3>
+      <span>Hors TVA</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Prestation</th>
+          <th>Honoraires indicatifs HT</th>
+          <th>Observations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Consultation notariale</td><td class="gold">150 € / heure</td><td>Sur rendez-vous</td></tr>
+        <tr><td>Rédaction d'un bail commercial</td><td class="gold">800 € – 1 500 €</td><td>Selon complexité</td></tr>
+        <tr><td>Rédaction d'un bail d'habitation</td><td class="gold">300 € – 600 €</td><td>Selon type de bail</td></tr>
+        <tr><td>Audit patrimonial</td><td class="gold">600 € – 1 200 €</td><td>Selon complexité</td></tr>
+        <tr><td>Rédaction d'un testament authentique</td><td class="gold">200 € – 500 €</td><td>—</td></tr>
+        <tr><td>Certificat de propriété</td><td class="gold">150 € – 300 €</td><td>—</td></tr>
+        <tr><td>Convention de tontine</td><td class="gold">500 € – 900 €</td><td>—</td></tr>
+        <tr><td>Rédaction de promesse de vente</td><td class="gold">500 € – 900 €</td><td>Hors acte authentique</td></tr>
+      </tbody>
+    </table>
+    <div class="tarif-footnote">* Ces tarifs sont fournis à titre indicatif. Un devis précis vous sera communiqué lors de votre prise de rendez-vous.</div>
+  </div>
+
+</section>
+
+<div class="pdf-band">
+  <p class="label">Réglementation</p>
+  <h2>Tarif réglementé<br>des <span class="gold-italic">notaires</span></h2>
+  <p class="desc">Conformément à la réglementation, notre étude applique le tarif réglementé pour tous les actes qui y sont soumis. Consultez le document officiel de notre étude.</p>
+  <a href="https://cdn.prod.website-files.com/64aeac32dcb0ea0654569e65/6778345d9915e66d312b7129_TARIF%20ETUDE.pdf" target="_blank" class="btn-gold">⬇ Télécharger le PDF</a>
+</div>
+
+<footer>
+  © 2024 · Office Notarial Me Thierry Vaillant · Poissy · <a href="#">Mentions légales</a>
+</footer>
+
+<script>
+  document.getElementById('ham').addEventListener('click',()=>document.getElementById('mob').classList.toggle('open'));
+</script>
+</body>
+</html>
