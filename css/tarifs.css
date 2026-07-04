@@ -1,0 +1,51 @@
+.tarif-notice {
+  background:rgba(201,168,76,.1);
+  border:1px solid rgba(201,168,76,.25);
+  padding:1.5rem 2rem;
+  font-size:.84rem;
+  color:var(--text-muted);
+  line-height:1.8;
+  margin-bottom:3rem;
+}
+.tarif-notice strong { color:var(--gold); }
+.tarif-notice-note { margin-top:.5rem; display:block; }
+
+.table-wrap {
+  border:1px solid var(--green-border);
+  overflow:hidden;
+}
+.table-head-bar {
+  background:var(--green-card);
+  padding:1.25rem 1.5rem;
+  display:flex; justify-content:space-between; align-items:center;
+  border-bottom:1px solid var(--green-border);
+}
+.table-head-bar h3 { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--text-light); }
+.table-head-bar span { font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--text-muted); }
+
+.tarif-footnote {
+  padding:1rem 1.5rem;
+  font-size:.72rem;
+  font-style:italic;
+  color:var(--text-muted);
+  border-top:1px solid var(--green-border);
+  background:var(--green-card);
+}
+
+.info-boxes { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--green-border); margin-bottom:3rem; }
+.info-box { background:var(--green-card); padding:2rem; }
+.info-box .ib-icon { font-size:1.4rem; margin-bottom:1rem; }
+.info-box h4 { font-family:'Playfair Display',serif; font-size:1rem; color:var(--text-light); margin-bottom:.6rem; }
+.info-box p { font-size:.8rem; color:var(--text-muted); line-height:1.75; }
+
+.pdf-band {
+  background:var(--green-mid);
+  padding:5rem 5vw;
+  text-align:center;
+  border-top:1px solid var(--green-border);
+}
+.pdf-band p.label { justify-content:center; display:flex; }
+.pdf-band h2 { margin:.75rem auto 1.25rem; max-width:480px; }
+.pdf-band p.desc { font-size:.87rem; color:var(--text-muted); max-width:420px; margin:0 auto 2.5rem; line-height:1.8; }
+
+@media(max-width:860px){ .info-boxes { grid-template-columns:1fr; } }

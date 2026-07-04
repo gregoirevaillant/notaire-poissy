@@ -297,3 +297,12 @@ footer a:hover { color:var(--gold); }
 .fu1 { animation-delay:.1s; }
 .fu2 { animation-delay:.22s; }
 .fu3 { animation-delay:.36s; }
+
+/* SPACING UTILITIES (replace one-off inline margin-top) */
+.mt-xs { margin-top:.75rem; }
+.mt-sm { margin-top:1.5rem; }
+.mt-md { margin-top:2.5rem; }
+.mt-lg { margin-top:3rem; }
+
+/* FULL-WIDTH CENTERED BUTTON VARIANT */
+.btn-full { width:100%; display:flex; justify-content:center; }

@@ -1,0 +1,42 @@
+/* Process steps */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--green-border);
+  margin-top: 3rem;
+}
+.process-step {
+  background: var(--green-mid);
+  padding: 2.5rem 2rem;
+}
+.step-num {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgba(201, 168, 76, 0.2);
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+.step-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+.step-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 860px) {
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}

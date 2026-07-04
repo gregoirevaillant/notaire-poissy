@@ -4,36 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notre équipe — Office Notarial Me Thierry VAILLANT, POISSY</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .bio-block {
-      display:grid; grid-template-columns:320px 1fr; gap:4rem; align-items:start;
-      padding:4rem 0; border-bottom:1px solid var(--green-border);
-    }
-    .bio-block:last-child { border-bottom:none; }
-    .bio-photo { position:relative; }
-    .bio-photo img { width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top; display:block; filter:saturate(.9); }
-    .bio-photo .photo-tag {
-      position:absolute; bottom:0; left:0; right:0;
-      background:var(--gold); color:var(--text-dark);
-      font-size:.6rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase;
-      padding:.5rem 1rem; text-align:center;
-    }
-    .bio-content { padding-top:.5rem; }
-    .bio-content h2 { margin-bottom:.3rem; }
-    .bio-content .role { font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:2rem; display:block; }
-    .bio-content p { font-size:.87rem; color:var(--text-muted); line-height:1.9; margin-bottom:1.1rem; }
-    .creds { margin-top:2rem; padding-top:2rem; border-top:1px solid var(--green-border); }
-    .cred { display:flex; gap:.8rem; align-items:flex-start; padding:.6rem 0; border-bottom:1px solid var(--green-border); }
-    .cred:last-child { border-bottom:none; }
-    .cred::before { content:'—'; color:var(--gold); flex-shrink:0; font-size:.9rem; margin-top:.05rem; }
-    .cred span { font-size:.83rem; color:var(--text-muted); line-height:1.6; }
-
-    @media(max-width:860px){
-      .bio-block { grid-template-columns:1fr; }
-      .bio-photo img { aspect-ratio:4/3; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/equipe.css">
 </head>
 <body>
 
@@ -125,8 +97,6 @@
   © 2024 · Office Notarial Me Thierry VAILLANT · POISSY · <a href="./mentions.html">Mentions légales</a>
 </footer>
 
-<script>
-  document.getElementById('ham').addEventListener('click',()=>document.getElementById('mob').classList.toggle('open'));
-</script>
+<script src="js/nav.js"></script>
 </body>
 </html>
