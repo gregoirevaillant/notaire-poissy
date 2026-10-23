@@ -75,31 +75,15 @@
   gap: 1rem;
 }
 
-/* Form submit success state */
-.form-hidden {
-  display: none;
-}
-.form-success {
-  display: none;
-  text-align: center;
-  padding: 3rem 0;
-}
-.form-success.show {
-  display: block;
-}
-.form-success-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.form-success h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
-  color: var(--text-light);
-  margin-bottom: 0.5rem;
-}
-.form-success p {
-  font-size: 0.84rem;
+/* Response-time + privacy note under the form */
+.form-note {
+  font-size: 0.75rem;
   color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 0.9rem;
+}
+.form-note a {
+  color: var(--gold);
 }
 
 /* Honeypot: kept in the layout (not display:none) so spam bots still fill it in */

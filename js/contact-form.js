@@ -1,5 +1,4 @@
 const form = document.getElementById("cform");
-const okBox = document.getElementById("ok");
 const errorBox = document.getElementById("form-error");
 const submitBtn = form.querySelector('button[type="submit"]');
 const submitLabel = submitBtn.textContent;
@@ -11,18 +10,18 @@ form.addEventListener("submit", async (e) => {
   submitBtn.textContent = "Envoi en cours…";
 
   try {
-    const response = await fetch("mail.php", {
+    const data = new FormData(form);
+    data.set("subject", "Nouveau message du site — " + data.get("sujet"));
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: new FormData(form),
+      body: data,
     });
     const result = await response.json();
 
     if (result.success) {
-      form.classList.add("form-hidden");
-      okBox.classList.add("show");
+      window.location.href = "merci.html";
     } else {
-      errorBox.textContent =
-        result.error || "Une erreur est survenue. Merci de réessayer ou de nous contacter directement.";
+      errorBox.textContent = "Une erreur est survenue. Merci de réessayer ou de nous contacter directement.";
       errorBox.classList.add("show");
     }
   } catch (err) {

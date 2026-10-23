@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.vaillant-poissy.notaires.fr/sitemap.xml
