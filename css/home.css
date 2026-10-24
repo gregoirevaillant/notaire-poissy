@@ -118,7 +118,7 @@
 /* ── TEAM PREVIEW ── */
 .team-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 420px);
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
